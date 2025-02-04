@@ -6,7 +6,7 @@ The **Friendly Data Server** project is designed to provide an intuitive interfa
 
 ### Subprojects:
 
-- **Friendly Data Server**: This Node.js server accepts human-formatted questions and utilizes a configurable AI prompt to transform these queries into SQL statements. It adapts to various data structures and sources using easily modifiable configuration files.
+- **Friendly Data Server**: This Node.js server accepts human-formatted questions and utilizes a configurable AI prompt to transform these queries into SQL statements. It adapts to various data structures and sources using easily modifiable configuration files. With Slack integration, it can also accept questions directly from Slack and respond within Slack, enhancing accessibility and user engagement.
 
 - **Friendly Audit Server**: A dedicated microservice that logs all user interactions, including questions, generated SQL queries, and any errors encountered. This component facilitates transparency, accountability, and ongoing system improvement.
 
@@ -15,7 +15,7 @@ The **Friendly Data Server** project is designed to provide an intuitive interfa
 ## Benefits
 
 1. **User-Friendly Interaction**:  
-   The system allows users with no SQL knowledge to interact with databases using natural language. This can increase accessibility and reduce the learning curve for less technical stakeholders.
+   The system allows users with no SQL knowledge to interact with databases using natural language. The Slack integration adds convenience by allowing interaction from a widely-used communication platform.
 
 2. **Modularity and Flexibility**:  
    The microservices architecture provides modularity. Each service has a distinct responsibility, improving maintainability and scalability. Additionally, the use of configurable text files for AI prompts offers flexibility to work with various data sources.
@@ -25,6 +25,9 @@ The **Friendly Data Server** project is designed to provide an intuitive interfa
 
 4. **Auditability**:  
    The Friendly Audit Server provides a mechanism to log questions and SQL statements, enhancing transparency, accountability, and providing a way to troubleshoot and improve system performance.
+
+5. **Enhanced Accessibility with Slack Integration**:  
+   Users can query the data server from Slack, a platform commonly used for team communication, improving ease of use and adoption.
 
 ## Improvements
 
