@@ -1,0 +1,23 @@
+{
+    "name": "friendly-audit-server",
+    "version": "1.0.0",
+    "description": "A simple Node.js server using Express and SQLite to log events.",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "keywords": [
+      "express",
+      "sqlite",
+      "nodejs",
+      "events"
+    ],
+    "author": "Chris Coy",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.18.2",
+      "sqlite3": "^5.1.4",
+      "cors": "^2.8.5",
+      "dotenv": "^16.4.7"
+    }
+  }

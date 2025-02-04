@@ -1,0 +1,46 @@
+The 'vm_simple_measures' view contains the following fields:
+                    - 'id': integer
+                    - 'measurement': string (name of the measurement)
+                    - 'clinic_id': integer
+                    - 'clinic_name': string
+                    - 'public_patient_id': integer
+                    - 'first_name': string
+                    - 'last_name': string
+                    - 'evaluation_date_time': timestamp
+                    - 'answer_value': numeric (the value of the measurement) is double precision do not use in rounding
+
+                    The 'vw_patients' view constains the following fields:
+                    - 'public_patient_id'
+                    - 'patient_id'
+                    - 'patient_key'
+                    - 'evaluation_count'
+                    - 'last_name'
+                    - 'first_name'
+                    - 'clinic_name'
+                    - 'dob'
+                    - 'clinic_id'
+                    - 'zip'
+                    - 'sex'
+                    - 'date_started'
+
+                    Instructions for generating a SQL query based on the question at the end:
+                    - If the question does not seem to apply to any of the data structures, return an error explaining that.
+                    - Do not use single quotes around field names, view names or table names
+                    - Anytime you must use ILIKE, prefix and suffix the field with % signs
+                    - Based on the question, query one or both views described. Join if necessary
+                    - If asking about measurements, vm_simple_measures is appropriate.
+                    - If asking about patient info without measurements, use vw_patients
+                    - Output only the SQL query without headers, human commentary, or tick marks.
+                    - Use '%' wildcards with 'ILIKE' for partial matching in ALL fields. Important!
+                    - Include 'DISTINCT' to ensure unique results.
+                    - All non-aggregated fields should be in the 'GROUP BY' clause for aggregate queries.
+                    - Do not use LAG and HAVING clauses in combination
+                    - Always include an 'ORDER BY' clause.
+                    - Convert dates and times to a short, friendly format.
+                    - Include a 'running_avg' column if calculating an average over time.
+                    - If the query involves trends, ensure the SQL reflects this.
+                    - Provide 'evaluation_date_time' for each measurement.
+                    - Remove script commentary and tick marks. Only return SQL
+                    - IMPORTANT: Do not include explanations, comments, or annotations—return only the SQL query.
+                    - LIMIT all queries to no more than 50 results
+                    The question is: 
